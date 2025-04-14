@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - FoodieExpress</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #b00f0f;
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .contact-section {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1600891965050-3d1b4a41f895?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3rem 2rem;
+      border-radius: 15px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contact-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 45%;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .contact-form button {
+      padding: 0.8rem;
+      border: none;
+      background-color: #ff4d4d;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e03d3d;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+
+      .contact-info,
+      .contact-form {
+        flex: 1 1 100%;
+      }
+
+      .contact-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FoodieExpress</h1>
+    <p>Delicious Meals Delivered Fast</p>
+  </header>
+
+  <section class="contact-section">
+    <div class="overlay">
+      <h2 class="contact-title">Contact Us</h2>
+      <div class="contact-wrapper">
+
+        <div class="contact-info">
+          <h3>Reach Us</h3>
+          <p><strong>📍 Address:</strong>Phagwara, Punjab</p>
+          <p><strong>📞 Phone:</strong> +91 9861203186</p>
+          <p><strong>📧 Email:</strong> help@foodieexpress.com</p>
+          <p><strong>⏰ Hours:</strong> Mon–Sun: 9am – 10pm</p>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

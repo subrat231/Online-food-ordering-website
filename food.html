@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Menu - FoodieExpress</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header {
+      background-color: rgba(255, 77, 77, 0.95);
+      padding: 1rem 2rem;
+      color: white;
+      text-align: center;
+    }
+
+    .menu-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 15px;
+    }
+
+    .menu-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .menu-item {
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      color: #333;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-item-content {
+      padding: 1rem;
+    }
+
+    .menu-item h3 {
+      margin: 0.5rem 0;
+    }
+
+    .menu-item p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .menu-item button {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .menu-item button:hover {
+      background-color: #e03d3d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FoodieExpress</h1>
+    <p>Delicious Meals Delivered Fast</p>
+  </header>
+
+  <section class="menu-section">
+    <h2 class="menu-title">Our Menu</h2>
+    <div class="menu-grid">
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Burger" />
+        <div class="menu-item-content">
+          <h3>Classic Cheeseburger</h3>
+          <p>Juicy grilled beef patty with cheese, lettuce, and tomato on a toasted bun.</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1601924579770-c5aa48061c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza" />
+        <div class="menu-item-content">
+          <h3>Margherita Pizza</h3>
+          <p>Fresh mozzarella, tomatoes, and basil on a crispy thin crust.</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sushi" />
+        <div class="menu-item-content">
+          <h3>Salmon Sushi Roll</h3>
+          <p>Fresh salmon with avocado and cucumber wrapped in seaweed and rice.</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://unsplash.com/photos/a-plate-of-spaghetti-with-tomatoes-and-feta-cheese-eMddYPqMJu8" alt="Pasta" />
+        <div class="menu-item-content">
+          <h3>Spaghetti Carbonara</h3>
+          <p>Classic Italian pasta with creamy sauce, pancetta, and parmesan cheese.</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>

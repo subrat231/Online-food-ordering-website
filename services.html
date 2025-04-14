@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - FoodieExpress</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff4d4d;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .services-section {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      color: #fff;
+    }
+
+    .services-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 3rem 2rem;
+      border-radius: 15px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #fff;
+    }
+
+    .services-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    .service-card {
+      flex: 1 1 30%;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      color: #333;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .service-card {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .service-card {
+        flex: 1 1 100%;
+      }
+
+      .services-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FoodieExpress</h1>
+    <p>Delicious Meals Delivered Fast</p>
+  </header>
+
+  <section class="services-section">
+    <div class="services-overlay">
+      <h2 class="services-title">Our Services</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h3>Fast Delivery</h3>
+          <p>Get your favorite meals delivered to your door in under 30 minutes, hot and fresh every time.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Catering Services</h3>
+          <p>Hosting an event? We offer customizable catering for birthdays, weddings, and corporate events.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Meal Subscriptions</h3>
+          <p>Subscribe to weekly meal plans designed by chefs and nutritionists — healthy, easy, and delicious.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Chef Specials</h3>
+          <p>Daily gourmet creations from our in-house chefs, available for a limited time. Taste the difference!</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Contactless Delivery</h3>
+          <p>Enjoy peace of mind with our safe and secure contactless delivery option for all orders.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>24/7 Support</h3>
+          <p>Our customer service team is here to help any time, day or night — just a message or call away.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
